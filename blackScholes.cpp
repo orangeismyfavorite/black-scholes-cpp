@@ -39,15 +39,21 @@ void putOption(float s, float k, float sigma, float r, float t)
 int main()
 {   
     float s, k, sigma, r, t;
+    s = price;
+    k = strike price;
+    sigma = volatility;
+    r = interest rate;
+    t = days until exercise;
+
+    t = t / 365;
 
     cout << "The price of the call is: ";
-    callOption(392.59, 395, 0.2557, 0.025, 0.04383562);
+    callOption(s, k, sigma, r, t);
     cout << '\n';
 
     cout << "The price of the put is: ";
-    putOption(390, 395, 0.2761, 0.025, 0.04657534);
+    putOption(s, k, sigma, r, t);
     cout << '\n';
 
     return 0;
 }
-
